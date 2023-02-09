@@ -1,0 +1,22 @@
+package com.test;
+
+public class DupWord {
+
+	public static void main(String[] args) {
+		String f = "java is java my is";
+		String[] ch = f.split(" ");
+		for(int i=0;i<ch.length;i++) { 
+			int ct =1;
+			for(int j=i+1;j<ch.length;j++) {
+				if(ch[i].equals(ch[j])) {
+					ct++;
+					//break;
+					
+				}}if(ct>1) {
+				System.out.println(ch[i]);}
+			}
+		}
+
+	}
+
+
